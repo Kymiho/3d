@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>3D modeling in 3D's Max</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <script type="text/javascript" src="../../js/main.js"></script>
+     <link rel="shortcut icon" href="../../img/logo.png" type="image/png">
+
+</head>
+<style type="text/css">
+.top{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../../img/7.png') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 50%;
+}  
+</style>
+
+
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="i.html"><img src="../../img/logo(black).png" title="3D modeling" alt="text"/></a>
+		</div><!-- end logo -->
+
+		<div id="menu_icon"></div>
+		<nav>
+			<ul class="menu">
+				<li><a href="i.html">Home</a></li>
+				<li><a href="v.html"  class="selected">Base Information</a></li>
+				<li><a href="g.html">Galary</a></li>
+				<li><a href="a.html">Another softs</a></li>
+			</ul>
+		</nav><!-- end navigation menu -->
+	<div class="footer clearfix">
+			<div class="rights">
+				<p>Copyright © 2020 kymiho.</p>
+			</div><!-- end rights -->
+		</div ><!-- end footer -->
+	</header>
+
+	<section class="main clearfix">
+
+		<section class="top">	
+			<div class="wrapper content_header clearfix">
+				<h1 class="title">Base Information</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+				<h3>Зачем изучать 3D графику и где она применяется?</h3>
+				<p>Сфер применения очень много, т.к. компьютерная графика обширно вошла в нашу жизнь, с каждым годом это направление охватывает все больше областей.<br>Рассмотрим несколько направлений:<br><br>
+				<i>1. Моделирование для игр</i><br>
+				Ежегодно выпускаются тысячи игр для PC, игровых приставок, мобильных устройств, поэтому для этой отрасли всегда требуются хорошие 3D специалисты!<br><br>
+				<i>2. Моделирование техники</i> <br>
+				Прежде чем запускать в производство какую-либо модель любой техники, сначала создается прототип, в этом помогают современные 3D технологии и графика. <br><br>
+				<i>3. Предметное моделирование </i><br>
+				Целой индустрией является предметное моделирование для специальных ресурсов — стоков, на которых продаются различные модели. <br><br>
+				<i>4. Ювилирные модели</i> <br>
+				В настоящее время в рекламе, на сайтах интернет-магазинов или каталогах все чаще используются именно 3D модели ювелирных изделий. Фото отходят на второй план. <br><br>
+				<i>5. Моделирование для мультфильмов</i> <br>
+				Компьютерная графика используется не только в мультфильмах, но и в кино. Она позволяет делать произведения более красочными, сейчас это ни для кого не секрет! <br><br>
+				<i>6. Архитектурная визуализация </i><br>
+				Отдельным направлением в 3D является визуализация интерьеров и экстерьеров. Каждый год строятся новые дома и жилые комплексы, люди делают ремонт, но перед его началом часто обращаются к дизайнерам, чтобы увидеть свое будущее жилище.
+			</p>
+			<h3>Рендер работ</h3>
+			<p>
+				<i>Рендеринг или отрисовка</i> — термин в компьютерной графике, обозначающий процесс получения изображения по модели с помощью компьютерной программы.<br>
+				Для рендера своих работ нам понадобится такой рендер, как Corona (<a href="https://corona-renderer.com/download" target="_blank">Скачать</a>), он бесплатная на 45 дней.</p>
+				<p>Чтобы вызвать окно Render Setup (Настройки рендера), жмём F10 или кликаем на кнопку на панели инструментов (чайник с шестерёнкой).</p>
+				<img src="../../img/img/1.jpg" > <br><br>
+				<p>Перед началом работы в Corona, нужно установить её как рендер-движок по умолчанию. </p>
+				<p>Заходим во вкладку Common (Общие) и разворачиваем раскрывающийся свиток Assign Renderer (Назначить рендер). Пункты этого свитка позволяют установить рендер-движок для визуализации, для отображения материалов в Material Editor (Редактор материалов) и рендер-движок для специфического режима реалтайм или псевдо-реалтайм визуализации сцены прямо в окне проекции. <br>
+				Жмём на троеточие напротив пункта Production (Производство), а также Material Editor (Редактор материалов) (если отжата кнопка с замочком) и в списке выбираем CoronaRenderer. <br></p>
+				<img src="../../img/img/2.jpg"><br>
+				<p>Чтобы при рендере была полноценная картинка с тенями и было видно сцену, нужно поставить специальную карту HDR.<br>Для этого нажмите <b>клавишу 8</b> на клавиатуре - открывается окно, где надо поставить галочку на Use Map (Использовать карту) и нажимать на кнопку None (Ничто), появляется окно с выбором карты – BitMap(бит карта) – загружается <a href="https://yadi.sk/d/3zlUKqKxXIkulw">HDR</a> файл.</p>
+				<img src="../../img/HDR.png">
+			<h3>Из чего состоит 3D модель?</h3>
+			<img src="../../img/img/3.jpg">
+			<p>
+			<i>Вершины или Vertex</i> – это условные опорные точки, которые находятся в пересечении линий. Вершины не могут существовать отдельно от всего.</p>
+
+			<p><i>Ребра или Edges</i> - это линии, которые образуют форму объекта. Ребра также не могут быть отдельно от других частей объекта. </p>
+
+			<p><i>Полигоны или Polygons</i> - это поверхности, которые образуются из ребер и вершин. Такие поверхности могут находится в пространстве по разному, из них строятся все объекты.
+			</p>
+			<h3>Горячие клавиши</h3>
+			<img src="../../img/img/4.jpg">
+			
+			</div><!-- end content -->
+		</section>
+	</section><!-- end main -->
+	
+</body>
+</html>

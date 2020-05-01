@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>3D modeling in 3D's Max</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="../../img/logo.png" type="image/png">
+
+</head>
+<style type="text/css">
+.top{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../../img/img/hero.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 50%;
+}  
+
+</style>
+
+
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="../../index.html"><img src="../../img/logo(black).png" title="3D modeling" alt="text"/></a>
+		</div><!-- end logo -->
+
+		<div id="menu_icon"></div>
+		<nav>
+			<ul>
+				<li><a href="../../index.html" >Главная</a></li>
+				<li><a href="vvod.html">Базовая информация</a></li>
+				<li><a href="galary.html">Галерея</a></li>
+				<li><a href="app.html">Другие приложения</a></li>
+			</ul>
+		</nav><!-- end navigation menu -->
+	<div class="footer clearfix">
+			<div class="rights">
+				<p>Copyright © 2020 kymiho.</p>
+			</div><!-- end rights -->
+		</div ><!-- end footer -->
+	</header>
+
+	<section class="main clearfix">
+
+		<section class="top">	
+			<div class="wrapper content_header clearfix">
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="6.html" class="previous" data-title="Previous"></a></li>
+						<li><a href="../../index.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="8.html" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<h1 class="title">Книги</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+				<p>Если в качестве материала установить какую либо текстуру, после чего назначить ее объекту, то текстура просто "натягивается" на объект, располагаясь с учетом текстурных координат. Но иногда необходимо расположить некоторые части текстуры в определенных местах объекта.</p>
+				<p>Текстура, с рассчитанными координатами для определенных ее частей называется текстурной разверткой.</p>
+				<p>Сейчас мы познакомимся с методом создания текстурной развертки, а именно с модификатором Unwrap UVW (развертка координат). Мы создадим простую модель книги и протекстурируем ее.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-1.gif">
+				<p>Теперь необходимо применить к данному объекту модификатор EditMesh(редактор сетки).</p>
+				<p>После этого перейдите в режим выделения граней (клавиша 3) и выделите все грани объекта (комбинация клавиш Ctrl + A - выделить все)</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-2.gif">
+				<p>Теперь, не снимая выделение, примените к объекту модификатор Unwrap UVW. В открывшихся настройках модификатора нажмите на кнопке Edit для редактирования развертки и создания текстурных координат.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-3.gif">
+				<p>Откроется окно Edit UVWs, предназначенное для создания текстурной развертки.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-4.gif">
+				<p>Существуют разные способы создания текстурных развёрток. В нашем случае мы имеем объект в виде книги, поэтому легко представить себе развертку в виде шести фотографий книги с разных сторон, следовательно нам оптимально подойдет метод Flatten Mapping (плоские карты). Нажмите комбинацию клавиш Ctrl + A, что бы выделить все, затем выберите меню Select (выделение) и в открывшемся списке выполните опцию Convert vertex to face. Теперь мы можем применить к нашему объекту метод Flatten Mapping. Для этого откройте меню Mapping -> Flatten Mapping.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-5.gif">
+				<p>В открывшемся окне параметров нажмите кнопку OK. Теперь можно увидеть разметку для всех наших граней</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-6.gif">
+				<p>Темно-синяя линия указывает на границу текстуры, зелеными линиями указаны границы граней нашей книги. Для визуализации текстуры откройте меню Tools (Инструменты) и выберите опцию Render UVW Template (обработка координат шаблона). В открывшемся окне настроек рендера текстурной развертки вы можете установить цвета для изображения и размер создаваемой текстуры.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-7.gif">
+				<p>Установите разрешение 512 пикселей и визуализируйте изображение, нажав на кнопку Render UV Template.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-8.gif">
+				<p>Сохраните полученное изображение на жесткий диск, после чего откройте его с помощью любого графического редактора, например Adobe PhotoShop. Надпишем каждую грань и сохраним изображение текстуры на жесткий диск.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-9.gif">
+				<p>Откройте редактор материалов и назначьте новому материалу в качестве карту Diffuse (дифузный) данное изображение. Полученный материал будет выглядеть следующем образом.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-10.gif">
+				<p>Теперь создадим еще одну книгу, сделав ее копию и назначим им данный материал. Переверните вторую книгу, чтобы увидеть ее заднюю грань.</p>
+				<p>Теперь нам вновь нужно поработать с нашим материалом в графическом редакторе. Но в этот раз нам необходимо разместить изображение книги на гранях, чтобы текстурная развертка стала выглядеть следующем образом.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-12.gif">
+				<p>Сохраните новую текстуру, и установите ее в качестве карты Diffuse нового материала. После этого создайте еще одну книгу методом копирования и назначьте данный материал всем книгам. Добавьте в сцену плоскость, имитирующую пол и источники света по желанию. Визуализируйте полученную сцену.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-13.gif">
+
+			</div><!-- end content -->
+		</section>
+	</section><!-- end main -->
+
+	</script>
+</body>
+</html>

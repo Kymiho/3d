@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>3D modeling in 3D's Max</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="../../js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+     <link rel="shortcut icon" href="../../img/logo.png" type="image/png">
+
+</head>
+<style type="text/css">
+.top{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background: url('../../img/img/hero.jpg') no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: 50% 50%;
+}  
+
+</style>
+
+
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="../../index.html"><img src="../../img/logo(black).png" title="3D modeling" alt="text"/></a>
+		</div><!-- end logo -->
+
+		<div id="menu_icon"></div>
+		<nav>
+			<ul class="menu">
+				<li><a href="i.html" >Home</a></li>
+				<li><a href="v.html">Base Information</a></li>
+				<li><a href="g.html">Galary</a></li>
+				<li><a href="a.html">Another softs</a></li>
+			</ul>
+		</nav><!-- end navigation menu -->
+	<div class="footer clearfix">
+			<div class="rights">
+				<p>Copyright © 2020 kymiho.</p>
+			</div><!-- end rights -->
+		</div ><!-- end footer -->
+	</header>
+
+	<section class="main clearfix">
+
+		<section class="top">	
+			<div class="wrapper content_header clearfix">
+				<div class="work_nav">
+							
+					<ul class="btn clearfix">
+						<li><a href="6.html" class="previous" data-title="Previous"></a></li>
+						<li><a href="i.html" class="grid" data-title="Portfolio"></a></li>
+						<li><a href="8.html" class="next" data-title="Next"></a></li>
+					</ul>							
+					
+				</div><!-- end work_nav -->
+				<h1 class="title">Books</h1>
+			</div>		
+		</section><!-- end top -->
+
+		<section class="wrapper">
+			<div class="content">
+				<p>If you set a texture as a material and then assign it to an object, the texture is simply "stretched" on the object, taking into account the texture coordinates. But sometimes you need to place certain parts of the texture in certain places on the object.</p>
+				<p>A texture with calculated coordinates for certain parts of it is called a texture scan.</p>
+				<p>Now we will learn how to create a texture scan, namely the Unwrap UVW modifier (coordinate scan). We will create a simple book model and protecture it.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-1.gif">
+				<p>now you need to apply the EditMesh modifier(grid editor) to this object.</p>
+				<p>After that, go to the face selection mode (key 3) and select all the faces of the object (Ctrl + A - select all)</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-2.gif">
+				<p>Now, without removing the selection, apply the Unwrap UVW modifier to the object. In the modifier settings that open, click the Edit button to edit the scan and create texture coordinates.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-3.gif">
+				<p>The Edit UVWs window opens for creating a texture scan.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-4.gif">
+				<p>There are different ways to create texture scans. In our case, we have an object in the form of a book, so it is easy to imagine a scan in the form of six photos of the book from different sides, so the Flatten Mapping method is optimal for us. Press Ctrl + A to select all, then select the Select menu and select the Convert vertex to face option in the list that opens. Now we can apply the Flatten Mapping method to our object. To do this, open the mapping -> Flatten Mapping menu.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-5.gif">
+				<p>In the parameters window that opens, click OK. Now you can see the markup for all our faces</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-6.gif">
+				<p>The dark blue line indicates the border of the texture, and the green lines indicate the borders of the edges of our book. To render a texture, open the Tools menu and select the Render UVW Template option. In the window that opens, you can set the colors for the image and the size of the created texture.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-7.gif">
+				<p>Set the resolution to 512 pixels and visualize the image by clicking the Render UV Template button.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-8.gif">
+				<p>Save the resulting image to your hard disk, then open it using any image editor, such as Adobe PhotoShop. Let's label each face and save the texture image to the hard disk.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-9.gif">
+				<p>Open the material editor and assign this image to the new material as the Diffuse map. The resulting material will look like this.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-10.gif">
+				<p>Now let's create another book by making a copy of it and assign them this material. Turn the second book over to see its back side.</p>
+				<p>Now we need to work with our material again in the image editor. But this time we need to place the image of the book on the edges so that the texture scan looks like this.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-12.gif">
+				<p>Save the new texture, and set it as a Diffuse map of the new material. Then create another book using the copy method and assign this material to all the books. Add a plane to the scene that simulates the floor and light sources as desired. Visualize the resulting scene.</p>
+				<img src="http://esate.ru/images/lessons/3d-max/urok-14/3d-max-urok-14-img-13.gif">
+
+			</div><!-- end content -->
+		</section>
+	</section><!-- end main -->
+
+	</script>
+</body>
+</html>
